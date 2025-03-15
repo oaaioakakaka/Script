@@ -1,0 +1,7 @@
+local vfx = game:GetObjects("rbxassetid://74417067882526")[1]
+
+for _, v in pairs(vfx:GetDescendants()) do
+    if v:IsA("ParticleEmitter") then
+        v:Clone().Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+    end
+end
