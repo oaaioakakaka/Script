@@ -1,0 +1,20 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Lavinho Style (BETA✅)",
+    Text = "We Hope U Enjoy This Script",
+    Button1 = "Thank U Zuyi",
+    Button2 = "❤️",
+    Duration = 3
+})
+
+local player = game:GetService("Players").LocalPlayer
+local st = player.PlayerGui.Style.BG.StyleTxt
+local Slot = player.PlayerGui.Style.BG.Slots.ScrollingFrame.Slot1.Text
+local des = player.PlayerGui.Style.BG.Desc
+
+while wait() do
+    st.Text = "Lavinho The Dribbler"
+    st.TextColor3 = Color3.fromRGB(0, 128, 0)
+    Slot.Text = "Lavinho"
+    Slot.TextColor3 = Color3.fromRGB(0, 128, 0)
+    des.Text = "The Best Dribbler In Blue Lock! - Made By PresidentZuyi And P2K✅"
+end
